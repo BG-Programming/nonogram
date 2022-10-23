@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Nonogram</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/nonogram.css">   
+	</head>
+	<body>
+		<h1>NONOGRAM</h1>
+		<div class="setting-panel">
+			<button id="btn5x5">5x5</button>
+			<button id="btn10x10">10x10</button>
+			<button id="btn15x15" >15x15</button>
+			<button id="btn20x20">20x20</button>
+			<button id="btn25x25">25x25</button>
+			<button id="btn30x30">30x30</button>
+		</div>
+
+		<div class="pen-panel">
+			<input type="radio" id="radBlackPen" name="pen" value="black">
+			<div id="lblPenBlack" class="pen-label black"></div>			
+			<input type="radio" id="radRedPen" name="pen" value="red">
+			<div id="lblPenRed" class="pen-label red"></div>
+			<input type="radio" id="radBluePen" name="pen" value="blue">
+			<div id="lblPenBlue" class="pen-label blue"></div>
+
+			<button id="btnConvertRed" class="btn-convert-red">red->black</button>
+			<button id="btnConvertBlue" class="btn-convert-blue">blue->black</button>
+
+		</div>
+		
+
+
+		<div id="board" class="board"></div>
+		<button id="btnSubmit" class="submit-button">Submit</button>
+
+		<div id="lblResultPanel" style="margin-top: 16px;"></div>
+		<button id="btnNewGame" class="hidden" style="margin-top: 8px;">New Game</button>
+
+
+		<script type="text/javascript" src="assets/js/nonogram.js"></script>
+	</body>
+</html>

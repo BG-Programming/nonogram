@@ -1,0 +1,142 @@
+.board {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.board .row {
+	display: flex;
+	flex-direction: row;
+}
+
+.board .space {
+	min-width: 24px;
+	height: 24px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 23px;
+}
+
+
+.board .cell {
+	min-width: 23px;
+	height: 23px;
+	border-left : 1px solid black;
+	border-bottom : 1px solid black;
+}
+.board .cell:last-child {
+	border-right : 1px solid black;
+}
+.board .cell-start .cell {
+	border-top : 1px solid black;
+}
+
+.board .cell.fill {	
+	border-left : 1px solid white;
+	border-bottom : 1px solid white;
+	background-color: black;
+}
+.board .cell.fill.black {
+	background-color: black;
+}
+.board .cell.fill.blue {
+	background-color: blue;
+}
+.board .cell.fill.red {
+	background-color: red;
+}
+.board .cell.x {	
+	background-image: url(../image/x.png);
+	background-position: center center;
+	background-size: contain;
+}
+.board .cell.x.red {	
+	background-image: url(../image/x_red.png);
+	background-position: center center;	
+	background-size: contain;	
+}
+.board .cell.x.blue {	
+	background-image: url(../image/x_blue.png);
+	background-position: center center;
+	background-size: contain;
+}
+
+
+
+
+
+.board  .hr-line-drawer {	
+	height: 2px;
+	background-color: black;
+	position: absolute;
+	left: 0px;
+	z-index: -1;
+}
+
+.board  .vh-line-drawer {
+	width: 2px;	
+	background-color: black;
+	top: 0px;
+	position: absolute;
+	z-index: -1;
+}
+
+.submit-button {
+	margin-top: 24px;
+}
+
+
+.result-wrong {	
+	color : #f48199;
+	font-weight: bold;
+}
+
+.result-win {
+	color : #007c01;
+	font-weight: bold;
+}
+
+.hidden {
+	display: none;	
+}
+
+.setting-panel {
+	margin-bottom: 32px;
+}
+
+.pen-panel {
+	margin-bottom: 16px;
+	display: flex;
+
+}
+
+.pen-panel .pen-label  {
+	width: 40px;
+	height: 16px;
+}
+
+.pen-panel .pen-label.black {
+	background-color: black;
+}
+.pen-panel .pen-label.blue {
+	background-color: blue;
+}
+.pen-panel .pen-label.red { 
+	background-color: red;
+}
+
+.pen-panel .btn-convert-red {
+	margin-left: 32px;
+}
+.pen-panel .btn-convert-blue {
+	margin-left: 8px;
+}
+
+
+
+*, *::after, *::before {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+	cursor: default;
+}
